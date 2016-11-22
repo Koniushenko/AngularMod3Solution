@@ -1,0 +1,7 @@
+<ul>
+<li ng-repeat='item in dirCtrl.foundIt'>
+	<li-item></li-item>
+	<button type="button" class="btn btn-primary" ng-click='dirCtrl.onRemove({index: $index});'>Remove it!</button>
+</li>
+</ul>
+<div ng-if='dirCtrl.empty()'> NOTHING FOUND!!!</div>
